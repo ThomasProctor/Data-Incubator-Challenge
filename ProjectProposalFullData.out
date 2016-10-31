@@ -30,7 +30,7 @@ Dep. Variable:           tripduration   R-squared:                       0.369
 Model:                            OLS   Adj. R-squared:                  0.350
 Method:                 Least Squares   F-statistic:                     18.74
 Date:                Mon, 31 Oct 2016   Prob (F-statistic):           1.20e-09
-Time:                        10:06:42   Log-Likelihood:                -746.13
+Time:                        10:15:25   Log-Likelihood:                -746.13
 No. Observations:                 100   AIC:                             1500.
 Df Residuals:                      96   BIC:                             1511.
 Df Model:                           3                                         
@@ -57,31 +57,30 @@ strong multicollinearity or other numerical problems.
 Simple Mean model results:
                             OLS Regression Results                            
 ==============================================================================
-Dep. Variable:           tripduration   R-squared:                       0.357
-Model:                            OLS   Adj. R-squared:                  0.343
-Method:                 Least Squares   F-statistic:                     26.87
-Date:                Mon, 31 Oct 2016   Prob (F-statistic):           5.18e-10
-Time:                        10:06:42   Log-Likelihood:                -747.14
-No. Observations:                 100   AIC:                             1500.
-Df Residuals:                      97   BIC:                             1508.
-Df Model:                           2                                         
+Dep. Variable:           tripduration   R-squared:                       0.351
+Model:                            OLS   Adj. R-squared:                  0.344
+Method:                 Least Squares   F-statistic:                     52.99
+Date:                Mon, 31 Oct 2016   Prob (F-statistic):           8.44e-11
+Time:                        10:15:25   Log-Likelihood:                -747.57
+No. Observations:                 100   AIC:                             1499.
+Df Residuals:                      98   BIC:                             1504.
+Df Model:                           1                                         
 Covariance Type:            nonrobust                                         
-=====================================================================================
-                        coef    std err          t      P>|t|      [95.0% Conf. Int.]
--------------------------------------------------------------------------------------
-Intercept           553.1178    111.857      4.945      0.000       331.112   775.124
-crosstown[T.True]   133.2433    145.680      0.915      0.363      -155.892   422.379
-googledistance        0.1630      0.044      3.716      0.000         0.076     0.250
+==================================================================================
+                     coef    std err          t      P>|t|      [95.0% Conf. Int.]
+----------------------------------------------------------------------------------
+Intercept        520.7228    106.013      4.912      0.000       310.343   731.102
+googledistance     0.1948      0.027      7.279      0.000         0.142     0.248
 ==============================================================================
-Omnibus:                       68.736   Durbin-Watson:                   2.186
-Prob(Omnibus):                  0.000   Jarque-Bera (JB):              342.453
-Skew:                           2.307   Prob(JB):                     4.34e-75
-Kurtosis:                      10.804   Cond. No.                     1.41e+04
+Omnibus:                       61.763   Durbin-Watson:                   2.228
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              257.869
+Skew:                           2.101   Prob(JB):                     1.01e-56
+Kurtosis:                       9.651   Cond. No.                     9.74e+03
 ==============================================================================
 
 Warnings:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-[2] The condition number is large, 1.41e+04. This might indicate that there are
+[2] The condition number is large, 9.74e+03. This might indicate that there are
 strong multicollinearity or other numerical problems.
 Multiplicative model, results:
                             OLS Regression Results                            
@@ -90,7 +89,7 @@ Dep. Variable:           tripduration   R-squared:                       0.002
 Model:                            OLS   Adj. R-squared:                  0.001
 Method:                 Least Squares   F-statistic:                     11.65
 Date:                Mon, 31 Oct 2016   Prob (F-statistic):           1.27e-07
-Time:                        10:06:42   Log-Likelihood:            -2.1247e+05
+Time:                        10:15:25   Log-Likelihood:            -2.1247e+05
 No. Observations:               22146   AIC:                         4.250e+05
 Df Residuals:                   22142   BIC:                         4.250e+05
 Df Model:                           3                                         
@@ -120,7 +119,7 @@ Dep. Variable:           tripduration   R-squared:                       0.001
 Model:                            OLS   Adj. R-squared:                  0.001
 Method:                 Least Squares   F-statistic:                     16.19
 Date:                Mon, 31 Oct 2016   Prob (F-statistic):           9.46e-08
-Time:                        10:06:42   Log-Likelihood:            -2.1247e+05
+Time:                        10:15:25   Log-Likelihood:            -2.1247e+05
 No. Observations:               22146   AIC:                         4.250e+05
 Df Residuals:                   22143   BIC:                         4.250e+05
 Df Model:                           2                                         

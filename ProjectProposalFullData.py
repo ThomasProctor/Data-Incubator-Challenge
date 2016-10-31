@@ -245,7 +245,7 @@ print(mean_results.summary())
 
 # In[77]:
 
-smean_model = smf.ols(formula='tripduration ~  googledistance + crosstown + 1', data=mean_df)
+smean_model = smf.ols(formula='tripduration ~  googledistance + 1', data=mean_df)
 smean_results = smean_model.fit()
 print('\nSimple Mean model results:')
 print(smean_results.summary())
@@ -352,11 +352,8 @@ plt.errorbar(wests_trips['googledistance'],
              label='Hudson River\nGreenway trips\n95% confidence\ninterval',
              yerr=[wests_trips['ci95% low'], wests_trips['ci95% high']],
              color=colorlist[-1], **scatter_kwargs)
-plt.plot(XX, smean_results.predict(ctXX), color=colorlist[0],
-         label='Fit, cross town data', **line_kwargs)
-plt.plot(XX, smean_results.predict(wsXX), color=colorlist[-1],
-         label='Fit, Hudson River\nGreenway data',
-         **line_kwargs)
+plt.plot(XX, smean_results.predict(ctXX), color='black',
+         label='Fit', **line_kwargs)
 plt.ylim(-100, 2000)
 plt.legend(loc='lower right')
 plt.savefig('simple_trip_distance_vs_time_actual.pdf')
