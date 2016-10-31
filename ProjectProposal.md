@@ -6,7 +6,7 @@ There are many reasons for this, one of which is that it is much harder to get g
 Data from bike share services such as Citibike offer a much larger amount of data than might have been previously available.
 
 I hope to use data from Citibike and other bike share systems, as well as data from Google Maps to predict travel times as measured by the bike share system.
-These can be compared to predictions made by Google Maps or other directions services.
+These can be compared to timing predictions made by Google Maps or other directions services and may be able to be added to these to improve the prediction.
 I may also include other data sources, such  as weather data, which has been shown by multiple sources to be a good predictor of ridership.
 
 As a proof of concept, I looked at a subset of data with which I am personally familiar.
@@ -57,8 +57,26 @@ As most tourists are "Customer" type users, one might expect that removing this 
 Also, my choice of stations was not ideal.
 the cross town trips are almost all longer than the Hudson River Greenway trips, so there is significant collinearity between the cross town and distance variables.
 
-The data I choose may not be the most ideal.
-The Hudson River Greenway is a popular route for cyclists looking to get exercise, who may have very different behavior from the largely commuter riders who are traveling cross town.
+The data I choose may not be the best as well.
+The Hudson River Greenway is a popular route for cyclists looking to get exercise, who may have very different behavior from the largely commuter riders who are traveling cross town and make up most of the other bike share rides.
+I would expect that commuter behavior is most reflective of what users want to know when they look at predicted travel time, as they want to know the travel time assuming that you are not making extensive stops.
+
+Interestingly, the predicted speed of my model is very close to the speed that Google Maps predicts.
+My model predicts a speed of 11.5 miles per hour, (granted, with wide confidence intervals between 16 and 9 mph), while Google maps predicts speeds of 12 miles per hour.
+Google maps data is very precise though - the model has 95% confidence intervals of only about 1/2 mile per hour.
+As they are predictions of a mean, this precision shouldn't be surprising.
+
+However, my model predicts about 8 minutes of time not spent moving, while Google Maps predicts only one minute not spent moving on the Hudson River Greenway and six minutes not spent moving for cross town trips.
+Google Maps probably wants to avoid predicting some of the time not spent moving, as much of it in the real world data is people stopping to do other things.
+These estimates come from the intercepts of the model, ie travel time that does not increase with distance.
 
 If it is possible to use bike share data to improve bicycling time estimates, it will require significant noise reduction.
-However, using a full data set with many stations, along with data from other bike shares may work much better than my proof of concept.
+However, using a full data set with many stations, along with data from other bike shares may work much better than my flawed proof of concept.
+
+Note:
+-----
+Just FYI, this is a project I have been thinking about looking into for a while, and was not something that I came up with after looking at your question 2.
+In fact, I wrote a [paragraph proposal](https://github.com/ThomasProctor/Slide-Rule-Data-Intensive/blob/master/DataStory/Capstone%20proposals.ipynb) for it nearly a year ago.
+
+Also, I included my Google API key in this repository so my code can be easily run, even though I'm not supposed to.
+I'm going to remove as soon as I hear back about my application, so you'll need your own to get my code to run.

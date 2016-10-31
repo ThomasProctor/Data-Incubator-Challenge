@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[1]:
+
 from __future__ import division
 import re
 import urllib2
@@ -12,35 +12,35 @@ import requests
 import numpy as np
 
 
-# In[2]:
+
 
 path = 'https://s3.amazonaws.com/tripdata/'
 response = urllib2.urlopen(path).read()
 
 
-# In[3]:
+
 
 regex = re.compile('2015\d{1,2}-citibike-tripdata.zip')
 
 
-# In[4]:
+
 
 files = regex.findall(response)
 
 
-# In[5]:
+
 
 def zip_to_csv(zip_name):
     base_name = zip_name[:zip_name.find('.zip')]
     return base_name + '.csv'
 
 
-# In[6]:
+
 
 csv_names = [zip_to_csv(name) for name in files]
 
 
-# In[7]:
+
 
 def zipped_online_csv_read(url, csv_filename, **kwargs):
     s = requests.get(url).content
@@ -48,7 +48,7 @@ def zipped_online_csv_read(url, csv_filename, **kwargs):
     return pd.read_csv(z.open(csv_filename), **kwargs)
 
 
-# In[8]:
+
 
 columns = ("tripduration, start station id, end station id, "
            "start station latitude, start station longitude, "
@@ -57,13 +57,13 @@ columns = ("tripduration, start station id, end station id, "
 dates = ['starttime']
 
 
-# In[9]:
+
 
 kwargs = {'usecols':columns, 'parse_dates':dates,
           'infer_datetime_format':True}
 
 
-# In[10]:
+
 
 df = pd.DataFrame(columns=columns)
 counter = 0
@@ -77,52 +77,52 @@ for i in zip(files, csv_names):
     
 
 
-# ### What is the median trip duration, in seconds? 
-
-# In[11]:
-
-question = "What is the median trip duration, in seconds?\n"
-print(question + str(int(df['tripduration'].median())))
 
 
-# ### What fraction of rides start and end at the same station? 
 
-# In[12]:
+
+question = "What is the median trip duration, in seconds?\n{:5.10f}"
+print(question.format(int(df['tripduration'].median())))
+
+
+
+
+
 
 question = ("What fraction of rides start and end "
-            "at the same station?\n")
+            "at the same station?\n{:5.10f}")
 same = df[df['start station id']
           == df['end station id']].shape[0]
-print(question + str(same / df.shape[0]))
+print(question.format(same / df.shape[0]))
 
 
-# ### We say a bike has visited a station if it has a ride that either started or ended at that station. Some bikes have visited many stations; others just a few. What is the standard deviation of the number of stations visited by a bike? 
 
-# In[13]:
+
+
 
 question = ("We say a bike has visited a station if it has "
             "a ride that either started or ended at that "
             "station. Some bikes have visited many stations; "
             "others just a few. What is the standard deviation "
-            "of the number of stations visited by a bike?\n")
+            "of the number of stations visited by a bike?\n{:5.10f}")
 def stations_visited(grp_df):
     started = set(grp_df['start station id'].dropna().unique())
     ended = set(grp_df['end station id'].dropna().unique())
     return len(started | ended)
 group = df.groupby('bikeid')
 bike_stations_visited = group.apply(stations_visited)
-print(question + str(bike_stations_visited.std()))
+print(question.format(bike_stations_visited.std()))
 
 
-# ### What is the average length, in kilometers, of a trip? Assume trips follow great circle arcs from the start station to the end station. Ignore trips that start and end at the same station, as well as those with obviously wrong data. 
 
-# In[14]:
+
+
 
 question = ("What is the average length, in kilometers, of a "
             "trip? Assume trips follow great circle arcs from "
             "the start station to the end station. Ignore "
             "trips that start and end at the same station, as "
-            "well as those with obviously wrong data.\n")
+            "well as those with obviously wrong data.\n{:5.10f}")
 
 def great_circle_dist(lat1, lon1, lat2, lon2):
     radius = 6371 #earth's radius in km
@@ -146,30 +146,30 @@ def mean_dist(df):
     return dists.mean()
     
 
-print(question + str(mean_dist(df)))
+print(question.format(mean_dist(df)))
     
     
 
 
-# ### Calculate the average duration of trips for each month in the year. (Consider a trip to occur in the month in which it starts.) What is the difference, in seconds, between the longest and shortest average durations? 
 
-# In[15]:
+
+
 
 question = ("Calculate the average duration of trips for "
             "each month in the year. (Consider a trip to "
             "occur in the month in which it starts.) What "
             "is the difference, in seconds, between the "
-            "longest and shortest average durations?\n")
+            "longest and shortest average durations?\n{:5.10f}")
 
 group = df.groupby(df['starttime'].dt.month)
 means = group['tripduration'].mean()
 diff = means.max() - means.min()
-print(question + str(diff))
+print(question.format(diff))
 
 
-# ### Let us define the hourly usage fraction of a station to be the fraction of all rides starting at that station that leave during a specific hour. A station has surprising usage patterns if it has an hourly usage fraction for an hour significantly different from the corresponding hourly usage fraction of the system as a whole. What is the largest ratio of station hourly usage fraction to system hourly usage fraction (hence corresponding to the most "surprising" station-hour pair)? 
 
-# In[23]:
+
+
 
 question = ('Let us define the hourly usage fraction of a '
             'station to be the fraction of all rides '
@@ -181,7 +181,7 @@ question = ('Let us define the hourly usage fraction of a '
             'system as a whole. What is the largest ratio of '
             'station hourly usage fraction to system hourly '
             'usage fraction (hence corresponding to the most '
-            '"surprising" station-hour pair)?\n')
+            '"surprising" station-hour pair)?\n{:5.10f}')
 
 hour = df['starttime'].dt.hour
 
@@ -200,30 +200,30 @@ def divide_total(df):
 top_group = station_hourly.groupby(level=['start station id'])
 station_system = top_group.apply(divide_total)
 
-print(question + str(station_system.max()))
+print(question.format(station_system.max()))
 
 
-# ### There are two types of riders: "Customers" and "Subscribers." Customers buy a short-time pass which allows 30-minute rides. Subscribers buy yearly passes that allow 45-minute rides. What fraction of rides exceed their corresponding time limit? 
 
-# In[21]:
+
+
 
 question = ('There are two types of riders: "Customers" and '
             '"Subscribers." Customers buy a short-time pass '
             'which allows 30-minute rides. Subscribers buy '
             'yearly passes that allow 45-minute rides. What '
             'fraction of rides exceed their corresponding '
-            'time limit?\n')
+            'time limit?\n{:5.10f}')
 subscribers_over = ((df['usertype'] == 'Subscriber')
                     & (df['tripduration'] > 45 * 60))
 customers_over = ((df['usertype'] == 'Customer')
                     & (df['tripduration'] > 30 * 60))
 exceeded_frac = (customers_over | subscribers_over).mean()
-print(question + str(exceeded_frac))
+print(question.format(exceeded_frac))
 
 
-# ### Most of the time, a bike will begin a trip at the same station where its previous trip ended. Sometimes a bike will be moved by the program, either for maintenance or to rebalance the distribution of bikes. What is the average number of times a bike is moved during this period, as detected by seeing if it starts at a different station than where the previous ride ended? 
 
-# In[22]:
+
+
 
 question = ("Most of the time, a bike will begin a trip at "
             "the same station where its previous trip ended. "
@@ -233,7 +233,7 @@ question = ("Most of the time, a bike will begin a trip at "
             "number of times a bike is moved during this "
             "period, as detected by seeing if it starts at a "
             "different station than where the previous ride "
-            "ended?\n")
+            "ended?\n{:5.10f}")
 group = df.groupby('bikeid')
 def times_moved(df):
     end_stations = df['end station id'].values
@@ -241,11 +241,11 @@ def times_moved(df):
     start_stations = df['start station id'].values
     return (rolled_stations[1:] != start_stations[1:]).sum()
 mean_moved = group.apply(times_moved).mean()
-print(question + str(mean_moved))
+print(question.format(mean_moved))
     
 
 
-# In[ ]:
+
 
 
 

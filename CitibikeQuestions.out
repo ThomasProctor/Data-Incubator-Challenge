@@ -23,18 +23,18 @@
 201512-citibike-tripdata.csv
 (9937969, 10)
 What is the median trip duration, in seconds?
-629
+629.0000000000
 What fraction of rides start and end at the same station?
-0.0223583913373
+0.0223583913
 We say a bike has visited a station if it has a ride that either started or ended at that station. Some bikes have visited many stations; others just a few. What is the standard deviation of the number of stations visited by a bike?
 54.5451138723
 What is the average length, in kilometers, of a trip? Assume trips follow great circle arcs from the start station to the end station. Ignore trips that start and end at the same station, as well as those with obviously wrong data.
-1.75965252546
+1.7596525255
 Calculate the average duration of trips for each month in the year. (Consider a trip to occur in the month in which it starts.) What is the difference, in seconds, between the longest and shortest average durations?
-430.57029597
+430.5702959700
 Let us define the hourly usage fraction of a station to be the fraction of all rides starting at that station that leave during a specific hour. A station has surprising usage patterns if it has an hourly usage fraction for an hour significantly different from the corresponding hourly usage fraction of the system as a whole. What is the largest ratio of station hourly usage fraction to system hourly usage fraction (hence corresponding to the most "surprising" station-hour pair)?
-1.14929761264e-06
+0.0000011493
 There are two types of riders: "Customers" and "Subscribers." Customers buy a short-time pass which allows 30-minute rides. Subscribers buy yearly passes that allow 45-minute rides. What fraction of rides exceed their corresponding time limit?
-0.0381067801681
+0.0381067802
 Most of the time, a bike will begin a trip at the same station where its previous trip ended. Sometimes a bike will be moved by the program, either for maintenance or to rebalance the distribution of bikes. What is the average number of times a bike is moved during this period, as detected by seeing if it starts at a different station than where the previous ride ended?
-155.405332075
+155.4053320750
