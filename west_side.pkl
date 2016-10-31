@@ -1,0 +1,1228 @@
+(dp0
+Vstatus
+p1
+VOK
+p2
+sVrows
+p3
+(lp4
+(dp5
+Velements
+p6
+(lp7
+(dp8
+Vduration
+p9
+(dp10
+Vtext
+p11
+V1 min
+p12
+sVvalue
+p13
+I0
+ssVdistance
+p14
+(dp15
+g11
+V1 m
+p16
+sg13
+I0
+ssg1
+VOK
+p17
+sa(dp18
+g9
+(dp19
+g11
+V7 mins
+p20
+sg13
+I428
+ssg14
+(dp21
+g11
+V2.0 km
+p22
+sg13
+I2023
+ssg1
+VOK
+p23
+sa(dp24
+g9
+(dp25
+g11
+V11 mins
+p26
+sg13
+I689
+ssg14
+(dp27
+g11
+V3.0 km
+p28
+sg13
+I3018
+ssg1
+VOK
+p29
+sa(dp30
+g9
+(dp31
+g11
+V3 mins
+p32
+sg13
+I197
+ssg14
+(dp33
+g11
+V0.9 km
+p34
+sg13
+I896
+ssg1
+VOK
+p35
+sa(dp36
+g9
+(dp37
+g11
+V2 mins
+p38
+sg13
+I139
+ssg14
+(dp39
+g11
+V0.5 km
+p40
+sg13
+I517
+ssg1
+VOK
+p41
+sa(dp42
+g9
+(dp43
+g11
+V5 mins
+p44
+sg13
+I319
+ssg14
+(dp45
+g11
+V1.3 km
+p46
+sg13
+I1302
+ssg1
+VOK
+p47
+sa(dp48
+g9
+(dp49
+g11
+V6 mins
+p50
+sg13
+I337
+ssg14
+(dp51
+g11
+V1.5 km
+p52
+sg13
+I1483
+ssg1
+VOK
+p53
+sa(dp54
+g9
+(dp55
+g11
+V3 mins
+p56
+sg13
+I152
+ssg14
+(dp57
+g11
+V0.6 km
+p58
+sg13
+I581
+ssg1
+VOK
+p59
+sasa(dp60
+g6
+(lp61
+(dp62
+g9
+(dp63
+g11
+V10 mins
+p64
+sg13
+I589
+ssg14
+(dp65
+g11
+V2.5 km
+p66
+sg13
+I2486
+ssg1
+VOK
+p67
+sa(dp68
+g9
+(dp69
+g11
+V1 min
+p70
+sg13
+I0
+ssg14
+(dp71
+g11
+V1 m
+p72
+sg13
+I0
+ssg1
+VOK
+p73
+sa(dp74
+g9
+(dp75
+g11
+V4 mins
+p76
+sg13
+I239
+ssg14
+(dp77
+g11
+V0.6 km
+p78
+sg13
+I602
+ssg1
+VOK
+p79
+sa(dp80
+g9
+(dp81
+g11
+V8 mins
+p82
+sg13
+I464
+ssg14
+(dp83
+g11
+V1.8 km
+p84
+sg13
+I1837
+ssg1
+VOK
+p85
+sa(dp86
+g9
+(dp87
+g11
+V8 mins
+p88
+sg13
+I496
+ssg14
+(dp89
+g11
+V2.0 km
+p90
+sg13
+I2018
+ssg1
+VOK
+p91
+sa(dp92
+g9
+(dp93
+g11
+V6 mins
+p94
+sg13
+I343
+ssg14
+(dp95
+g11
+V1.3 km
+p96
+sg13
+I1325
+ssg1
+VOK
+p97
+sa(dp98
+g9
+(dp99
+g11
+V4 mins
+p100
+sg13
+I218
+ssg14
+(dp101
+g11
+V1.0 km
+p102
+sg13
+I1044
+ssg1
+VOK
+p103
+sa(dp104
+g9
+(dp105
+g11
+V11 mins
+p106
+sg13
+I681
+ssg14
+(dp107
+g11
+V3.2 km
+p108
+sg13
+I3197
+ssg1
+VOK
+p109
+sasa(dp110
+g6
+(lp111
+(dp112
+g9
+(dp113
+g11
+V11 mins
+p114
+sg13
+I666
+ssg14
+(dp115
+g11
+V2.9 km
+p116
+sg13
+I2933
+ssg1
+VOK
+p117
+sa(dp118
+g9
+(dp119
+g11
+V5 mins
+p120
+sg13
+I275
+ssg14
+(dp121
+g11
+V0.9 km
+p122
+sg13
+I863
+ssg1
+VOK
+p123
+sa(dp124
+g9
+(dp125
+g11
+V1 min
+p126
+sg13
+I0
+ssg14
+(dp127
+g11
+V1 m
+p128
+sg13
+I0
+ssg1
+VOK
+p129
+sa(dp130
+g9
+(dp131
+g11
+V9 mins
+p132
+sg13
+I541
+ssg14
+(dp133
+g11
+V2.3 km
+p134
+sg13
+I2285
+ssg1
+VOK
+p135
+sa(dp136
+g9
+(dp137
+g11
+V10 mins
+p138
+sg13
+I573
+ssg14
+(dp139
+g11
+V2.5 km
+p140
+sg13
+I2466
+ssg1
+VOK
+p141
+sa(dp142
+g9
+(dp143
+g11
+V7 mins
+p144
+sg13
+I420
+ssg14
+(dp145
+g11
+V1.8 km
+p146
+sg13
+I1773
+ssg1
+VOK
+p147
+sa(dp148
+g9
+(dp149
+g11
+V7 mins
+p150
+sg13
+I448
+ssg14
+(dp151
+g11
+V1.6 km
+p152
+sg13
+I1564
+ssg1
+VOK
+p153
+sa(dp154
+g9
+(dp155
+g11
+V13 mins
+p156
+sg13
+I758
+ssg14
+(dp157
+g11
+V3.6 km
+p158
+sg13
+I3644
+ssg1
+VOK
+p159
+sasa(dp160
+g6
+(lp161
+(dp162
+g9
+(dp163
+g11
+V4 mins
+p164
+sg13
+I257
+ssg14
+(dp165
+g11
+V1.3 km
+p166
+sg13
+I1333
+ssg1
+VOK
+p167
+sa(dp168
+g9
+(dp169
+g11
+V4 mins
+p170
+sg13
+I231
+ssg14
+(dp171
+g11
+V1.1 km
+p172
+sg13
+I1127
+ssg1
+VOK
+p173
+sa(dp174
+g9
+(dp175
+g11
+V9 mins
+p176
+sg13
+I515
+ssg14
+(dp177
+g11
+V2.1 km
+p178
+sg13
+I2148
+ssg1
+VOK
+p179
+sa(dp180
+g9
+(dp181
+g11
+V1 min
+p182
+sg13
+I0
+ssg14
+(dp183
+g11
+V1 m
+p184
+sg13
+I0
+ssg1
+VOK
+p185
+sa(dp186
+g9
+(dp187
+g11
+V3 mins
+p188
+sg13
+I170
+ssg14
+(dp189
+g11
+V0.9 km
+p190
+sg13
+I860
+ssg1
+VOK
+p191
+sa(dp192
+g9
+(dp193
+g11
+V2 mins
+p194
+sg13
+I145
+ssg14
+(dp195
+g11
+V0.4 km
+p196
+sg13
+I432
+ssg1
+VOK
+p197
+sa(dp198
+g9
+(dp199
+g11
+V2 mins
+p200
+sg13
+I141
+ssg14
+(dp201
+g11
+V0.6 km
+p202
+sg13
+I587
+ssg1
+VOK
+p203
+sa(dp204
+g9
+(dp205
+g11
+V8 mins
+p206
+sg13
+I487
+ssg14
+(dp207
+g11
+V2.3 km
+p208
+sg13
+I2304
+ssg1
+VOK
+p209
+sasa(dp210
+g6
+(lp211
+(dp212
+g9
+(dp213
+g11
+V3 mins
+p214
+sg13
+I179
+ssg14
+(dp215
+g11
+V0.5 km
+p216
+sg13
+I517
+ssg1
+VOK
+p217
+sa(dp218
+g9
+(dp219
+g11
+V6 mins
+p220
+sg13
+I349
+ssg14
+(dp221
+g11
+V1.5 km
+p222
+sg13
+I1541
+ssg1
+VOK
+p223
+sa(dp224
+g9
+(dp225
+g11
+V10 mins
+p226
+sg13
+I610
+ssg14
+(dp227
+g11
+V2.5 km
+p228
+sg13
+I2535
+ssg1
+VOK
+p229
+sa(dp230
+g9
+(dp231
+g11
+V2 mins
+p232
+sg13
+I118
+ssg14
+(dp233
+g11
+V0.4 km
+p234
+sg13
+I414
+ssg1
+VOK
+p235
+sa(dp236
+g9
+(dp237
+g11
+V1 min
+p238
+sg13
+I0
+ssg14
+(dp239
+g11
+V1 m
+p240
+sg13
+I0
+ssg1
+VOK
+p241
+sa(dp242
+g9
+(dp243
+g11
+V4 mins
+p244
+sg13
+I240
+ssg14
+(dp245
+g11
+V0.8 km
+p246
+sg13
+I819
+ssg1
+VOK
+p247
+sa(dp248
+g9
+(dp249
+g11
+V4 mins
+p250
+sg13
+I259
+ssg14
+(dp251
+g11
+V1.0 km
+p252
+sg13
+I1000
+ssg1
+VOK
+p253
+sa(dp254
+g9
+(dp255
+g11
+V4 mins
+p256
+sg13
+I236
+ssg14
+(dp257
+g11
+V1.1 km
+p258
+sg13
+I1051
+ssg1
+VOK
+p259
+sasa(dp260
+g6
+(lp261
+(dp262
+g9
+(dp263
+g11
+V5 mins
+p264
+sg13
+I308
+ssg14
+(dp265
+g11
+V1.2 km
+p266
+sg13
+I1217
+ssg1
+VOK
+p267
+sa(dp268
+g9
+(dp269
+g11
+V6 mins
+p270
+sg13
+I348
+ssg14
+(dp271
+g11
+V1.4 km
+p272
+sg13
+I1363
+ssg1
+VOK
+p273
+sa(dp274
+g9
+(dp275
+g11
+V7 mins
+p276
+sg13
+I432
+ssg14
+(dp277
+g11
+V1.8 km
+p278
+sg13
+I1773
+ssg1
+VOK
+p279
+sa(dp280
+g9
+(dp281
+g11
+V3 mins
+p282
+sg13
+I184
+ssg14
+(dp283
+g11
+V0.6 km
+p284
+sg13
+I569
+ssg1
+VOK
+p285
+sa(dp286
+g9
+(dp287
+g11
+V4 mins
+p288
+sg13
+I216
+ssg14
+(dp289
+g11
+V0.8 km
+p290
+sg13
+I750
+ssg1
+VOK
+p291
+sa(dp292
+g9
+(dp293
+g11
+V1 min
+p294
+sg13
+I0
+ssg14
+(dp295
+g11
+V1 m
+p296
+sg13
+I0
+ssg1
+VOK
+p297
+sa(dp298
+g9
+(dp299
+g11
+V4 mins
+p300
+sg13
+I262
+ssg14
+(dp301
+g11
+V0.8 km
+p302
+sg13
+I817
+ssg1
+VOK
+p303
+sa(dp304
+g9
+(dp305
+g11
+V7 mins
+p306
+sg13
+I401
+ssg14
+(dp307
+g11
+V1.9 km
+p308
+sg13
+I1928
+ssg1
+VOK
+p309
+sasa(dp310
+g6
+(lp311
+(dp312
+g9
+(dp313
+g11
+V7 mins
+p314
+sg13
+I449
+ssg14
+(dp315
+g11
+V2.0 km
+p316
+sg13
+I1979
+ssg1
+VOK
+p317
+sa(dp318
+g9
+(dp319
+g11
+V2 mins
+p320
+sg13
+I102
+ssg14
+(dp321
+g11
+V0.6 km
+p322
+sg13
+I579
+ssg1
+VOK
+p323
+sa(dp324
+g9
+(dp325
+g11
+V7 mins
+p326
+sg13
+I401
+ssg14
+(dp327
+g11
+V1.6 km
+p328
+sg13
+I1566
+ssg1
+VOK
+p329
+sa(dp330
+g9
+(dp331
+g11
+V4 mins
+p332
+sg13
+I237
+ssg14
+(dp333
+g11
+V1.2 km
+p334
+sg13
+I1228
+ssg1
+VOK
+p335
+sa(dp336
+g9
+(dp337
+g11
+V4 mins
+p338
+sg13
+I253
+ssg14
+(dp339
+g11
+V1.4 km
+p340
+sg13
+I1405
+ssg1
+VOK
+p341
+sa(dp342
+g9
+(dp343
+g11
+V3 mins
+p344
+sg13
+I203
+ssg14
+(dp345
+g11
+V0.8 km
+p346
+sg13
+I818
+ssg1
+VOK
+p347
+sa(dp348
+g9
+(dp349
+g11
+V1 min
+p350
+sg13
+I0
+ssg14
+(dp351
+g11
+V1 m
+p352
+sg13
+I0
+ssg1
+VOK
+p353
+sa(dp354
+g9
+(dp355
+g11
+V9 mins
+p356
+sg13
+I541
+ssg14
+(dp357
+g11
+V2.7 km
+p358
+sg13
+I2690
+ssg1
+VOK
+p359
+sasa(dp360
+g6
+(lp361
+(dp362
+g9
+(dp363
+g11
+V3 mins
+p364
+sg13
+I163
+ssg14
+(dp365
+g11
+V0.6 km
+p366
+sg13
+I581
+ssg1
+VOK
+p367
+sa(dp368
+g9
+(dp369
+g11
+V11 mins
+p370
+sg13
+I663
+ssg14
+(dp371
+g11
+V3.2 km
+p372
+sg13
+I3234
+ssg1
+VOK
+p373
+sa(dp374
+g9
+(dp375
+g11
+V12 mins
+p376
+sg13
+I747
+ssg14
+(dp377
+g11
+V3.6 km
+p378
+sg13
+I3644
+ssg1
+VOK
+p379
+sa(dp380
+g9
+(dp381
+g11
+V5 mins
+p382
+sg13
+I292
+ssg14
+(dp383
+g11
+V1.4 km
+p384
+sg13
+I1430
+ssg1
+VOK
+p385
+sa(dp386
+g9
+(dp387
+g11
+V4 mins
+p388
+sg13
+I234
+ssg14
+(dp389
+g11
+V1.1 km
+p390
+sg13
+I1051
+ssg1
+VOK
+p391
+sa(dp392
+g9
+(dp393
+g11
+V6 mins
+p394
+sg13
+I377
+ssg14
+(dp395
+g11
+V1.9 km
+p396
+sg13
+I1928
+ssg1
+VOK
+p397
+sa(dp398
+g9
+(dp399
+g11
+V10 mins
+p400
+sg13
+I577
+ssg14
+(dp401
+g11
+V2.7 km
+p402
+sg13
+I2688
+ssg1
+VOK
+p403
+sa(dp404
+g9
+(dp405
+g11
+V1 min
+p406
+sg13
+I0
+ssg14
+(dp407
+g11
+V1 m
+p408
+sg13
+I0
+ssg1
+VOK
+p409
+sasasVorigin_addresses
+p410
+(lp411
+V601 W 52nd St, New York, NY 10019, USA
+p412
+aV600-698 W 27th St, New York, NY 10001, USA
+p413
+aV547 W 20th St, New York, NY 10011, USA
+p414
+aV678 W 41st St, New York, NY 10018, USA
+p415
+aV600-604 W 46th St, New York, NY 10036, USA
+p416
+aVHudson River Greenway, New York, NY 10018, USA
+p417
+aV600-630 W 34th St, New York, NY 10001, USA
+p418
+aV863-869 11th Ave, New York, NY 10019, USA
+p419
+asVdestination_addresses
+p420
+(lp421
+V601 W 52nd St, New York, NY 10019, USA
+p422
+aV260 11th Ave, New York, NY 10001, USA
+p423
+aV547 W 20th St, New York, NY 10011, USA
+p424
+aV554 11th Ave, New York, NY 10036, USA
+p425
+aV600-604 W 46th St, New York, NY 10036, USA
+p426
+aVHudson River Greenway, New York, NY 10018, USA
+p427
+aV600-630 W 34th St, New York, NY 10001, USA
+p428
+aV863-869 11th Ave, New York, NY 10019, USA
+p429
+as.
