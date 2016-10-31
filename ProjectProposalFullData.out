@@ -1,0 +1,144 @@
+201501-citibike-tripdata.csv
+(285552, 8)
+201502-citibike-tripdata.csv
+(482482, 8)
+201503-citibike-tripdata.csv
+(824308, 8)
+201504-citibike-tripdata.csv
+(1476698, 8)
+201505-citibike-tripdata.csv
+(2438684, 8)
+201506-citibike-tripdata.csv
+(3379903, 8)
+201507-citibike-tripdata.csv
+(4465579, 8)
+201508-citibike-tripdata.csv
+(5644623, 8)
+201509-citibike-tripdata.csv
+(6934322, 8)
+201510-citibike-tripdata.csv
+(8146599, 8)
+201511-citibike-tripdata.csv
+(9133844, 8)
+201512-citibike-tripdata.csv
+(9937969, 8)
+
+Mean model results:
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:           tripduration   R-squared:                       0.369
+Model:                            OLS   Adj. R-squared:                  0.350
+Method:                 Least Squares   F-statistic:                     18.74
+Date:                Mon, 31 Oct 2016   Prob (F-statistic):           1.20e-09
+Time:                        10:06:42   Log-Likelihood:                -746.13
+No. Observations:                 100   AIC:                             1500.
+Df Residuals:                      96   BIC:                             1511.
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+====================================================================================================
+                                       coef    std err          t      P>|t|      [95.0% Conf. Int.]
+----------------------------------------------------------------------------------------------------
+Intercept                          788.8037    201.973      3.905      0.000       387.891  1189.717
+crosstown[T.True]                 -247.6514    308.544     -0.803      0.424      -860.106   364.803
+googledistance                       0.0445      0.095      0.467      0.642        -0.145     0.234
+googledistance:crosstown[T.True]     0.1500      0.107      1.398      0.165        -0.063     0.363
+==============================================================================
+Omnibus:                       61.868   Durbin-Watson:                   2.181
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              264.759
+Skew:                           2.090   Prob(JB):                     3.22e-58
+Kurtosis:                       9.787   Cond. No.                     4.28e+04
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 4.28e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+Simple Mean model results:
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:           tripduration   R-squared:                       0.357
+Model:                            OLS   Adj. R-squared:                  0.343
+Method:                 Least Squares   F-statistic:                     26.87
+Date:                Mon, 31 Oct 2016   Prob (F-statistic):           5.18e-10
+Time:                        10:06:42   Log-Likelihood:                -747.14
+No. Observations:                 100   AIC:                             1500.
+Df Residuals:                      97   BIC:                             1508.
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+=====================================================================================
+                        coef    std err          t      P>|t|      [95.0% Conf. Int.]
+-------------------------------------------------------------------------------------
+Intercept           553.1178    111.857      4.945      0.000       331.112   775.124
+crosstown[T.True]   133.2433    145.680      0.915      0.363      -155.892   422.379
+googledistance        0.1630      0.044      3.716      0.000         0.076     0.250
+==============================================================================
+Omnibus:                       68.736   Durbin-Watson:                   2.186
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              342.453
+Skew:                           2.307   Prob(JB):                     4.34e-75
+Kurtosis:                      10.804   Cond. No.                     1.41e+04
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.41e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
+Multiplicative model, results:
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:           tripduration   R-squared:                       0.002
+Model:                            OLS   Adj. R-squared:                  0.001
+Method:                 Least Squares   F-statistic:                     11.65
+Date:                Mon, 31 Oct 2016   Prob (F-statistic):           1.27e-07
+Time:                        10:06:42   Log-Likelihood:            -2.1247e+05
+No. Observations:               22146   AIC:                         4.250e+05
+Df Residuals:                   22142   BIC:                         4.250e+05
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+====================================================================================================
+                                       coef    std err          t      P>|t|      [95.0% Conf. Int.]
+----------------------------------------------------------------------------------------------------
+Intercept                          812.6778     72.075     11.275      0.000       671.405   953.951
+crosstown[T.True]                 -218.8702    330.929     -0.661      0.508      -867.514   429.774
+googledistance                       0.0418      0.031      1.370      0.171        -0.018     0.102
+googledistance:crosstown[T.True]     0.1199      0.075      1.604      0.109        -0.027     0.267
+==============================================================================
+Omnibus:                    80689.389   Durbin-Watson:                   1.964
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):      50540855768.470
+Skew:                          76.527   Prob(JB):                         0.00
+Kurtosis:                    7402.227   Cond. No.                     3.90e+04
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 3.9e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
+Simple model, results:
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:           tripduration   R-squared:                       0.001
+Model:                            OLS   Adj. R-squared:                  0.001
+Method:                 Least Squares   F-statistic:                     16.19
+Date:                Mon, 31 Oct 2016   Prob (F-statistic):           9.46e-08
+Time:                        10:06:42   Log-Likelihood:            -2.1247e+05
+No. Observations:               22146   AIC:                         4.250e+05
+Df Residuals:                   22143   BIC:                         4.250e+05
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+=====================================================================================
+                        coef    std err          t      P>|t|      [95.0% Conf. Int.]
+-------------------------------------------------------------------------------------
+Intercept           768.4459     66.593     11.539      0.000       637.918   898.973
+crosstown[T.True]   284.1846    105.559      2.692      0.007        77.281   491.088
+googledistance        0.0618      0.028      2.217      0.027         0.007     0.116
+==============================================================================
+Omnibus:                    80686.108   Durbin-Watson:                   1.964
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):      50514177123.813
+Skew:                          76.518   Prob(JB):                         0.00
+Kurtosis:                    7400.274   Cond. No.                     1.26e+04
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.26e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
